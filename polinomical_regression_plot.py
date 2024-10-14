@@ -5,8 +5,8 @@ from sklearn.preprocessing import PolynomialFeatures
 import pandas as pd
 
 # Load training data
-training_data = pd.read_csv('monthly_income_training_data.csv')
-# training_data = pd.read_csv('monthly_income_training_data_large.csv')
+training_data = pd.read_csv('training_data/monthly_income_training_data.csv')
+# training_data = pd.read_csv('training_data/monthly_income_training_data_large.csv')
 
 X = training_data.iloc[:, :-1].values
 Y = training_data.iloc[:, -1:].values.ravel()
